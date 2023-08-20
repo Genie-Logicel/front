@@ -8,24 +8,65 @@ import Schl from '../../assets/School.png'
 import RH from '../../assets/RH-Log.png'
 import AirPay from '../../assets/7.png'
 
+interface Info {
+    nom: string,
+    email: string,
+    adresse: string
+}
+
+interface Link{
+    id: number,
+    relation: string,
+    nom: string
+}
+
+interface Basic{
+    id: number,
+    description: string,
+    nom: string
+}
+
+interface Experience{
+    id: number,
+    poste: string,
+    annee: string,
+    société: string
+}
+
+interface Study{
+    id: number,
+    domaine: string,
+    niveau: string,
+    institution: string
+
+}
+
+interface Formation{
+    id: number,
+    institution: string,
+    annee: string,
+    titre: string
+}
+
 function Portfolio() {
     const { id } = useParams();
 
-    const [info, setInfo] = useState([]);
-    const [links, setLinks] = useState([]);
-    const [skills, setSkills] = useState([]);
-    const [experiences, setExperiences] = useState([]);
-    const [studies, setStudies] = useState([]);
-    const [formations, setFormations] = useState([]);
-    const [others, setOthers] = useState([]);
+    const [info, setInfo] = useState<Info>([]);
+    const [links, setLinks] = useState<Link[]>([]);
+    const [skills, setSkills] = useState<Basic[]>([]);
+    const [experiences, setExperiences] = useState<Experience[]>([]);
+    const [studies, setStudies] = useState<Study[]>([]);
+    const [formations, setFormations] = useState<Formation[]>([]);
+    const [others, setOthers] = useState<Basic[]>([]);
     const [randomText, setRandomText] = useState('');
 
     useEffect(() => {
         fetchData();
         rand()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    const fetchData = async () => {
+    async function fetchData(): Promise<void> {
         try {
             const response = await axios.get('http://127.0.0.1:8000/api/members/' + id);
             setInfo(response.data.data.member);
@@ -39,7 +80,7 @@ function Portfolio() {
         } catch (error) {
             console.error('Error fetching data:', error);
         }
-    };
+    }
 
     // * rand
     const rand = async () => {
@@ -141,7 +182,7 @@ function Portfolio() {
                         <div className="flex justify-center">
                             <ol className="relative border-l border-gray-200">
                                 {experiences.map((experience) => (
-                                    <li className="mb-10 ml-6">
+                                    <li key={experience.id} className="mb-10 ml-6">
                                         <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white">
                                             <svg className="w-2.5 h-2.5 text-blue-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
@@ -167,7 +208,7 @@ function Portfolio() {
                                 </div>
                                 <div className="flex flex-col justify-center">
                                     {studies.map((study) => (
-                                        <div className="p-5 mb-4 border border-gray-100 rounded-lg">
+                                        <div key={study.id} className="p-5 mb-4 border border-gray-100 rounded-lg">
                                             <time className="text-lg font-semibold text-gray-900">{study.niveau}</time>
                                             <ol className="mt-3 divide-y divider-gray-200">
                                                 <li>
@@ -192,7 +233,7 @@ function Portfolio() {
                                 </div>
                                 <div className="flex flex-col justify-center">
                                     {formations.map((formation) => (
-                                        <div className="p-5 mb-4 border border-gray-100 rounded-lg">
+                                        <div key={formation.id} className="p-5 mb-4 border border-gray-100 rounded-lg">
                                             <time className="text-lg font-semibold text-gray-900">{formation.titre}</time>
                                             <ol className="mt-3 divide-y divider-gray-200">
                                                 <li>
