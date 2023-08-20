@@ -23,7 +23,7 @@ function Team() {
             <div className="flex items-center bg-gradient-to-r from-blue-400 via-white to-blue-100 w-[100%]">
                 <div className="flex flex-col items-center rounded-tr-full rounded-bl-full w-full bg-white">
                     <div className="flex flex-col p-2 m-2 w-full">
-                        <div className="text-3xl font-bold text-center">Notre équipe</div>
+                        <div className="text-5xl first-letter:text-7xl font-bold text-center">Notre équipe</div>
 
                         <div className="flex items-center justify-center text-center">
                             <div className="flex flex-col p-2 m-2 ">
