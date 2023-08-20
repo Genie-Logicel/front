@@ -6,6 +6,7 @@ interface Member {
     id: number;
     nom: string;
     role_nom: string;
+    sex: string
 }
 
 function Team() {
@@ -32,10 +33,10 @@ function Team() {
                         <div className="flex justify-center flex-wrap gap-8">
                             {/* card */}
                             {members.map(item => (
-                                <div key={item.id} className="flex-col group w-1/5 shadow-lg hover:shadow-xl card duration-150 py-8 max-w-7xl space-y-3">
+                                <div key={item.id} className="flex-col bg-base-100/75 group w-1/5 shadow-lg hover:shadow-xl card duration-150 py-8 max-w-7xl space-y-3">
                                     <div className="avatar flex justify-center">
                                         <div className="w-[50%] rounded-full ring group-hover:ring-blue-500 duration-150 ring-offset-base-100 ring-offset-2">
-                                            <img src="https://source.unsplash.com/300x300/?man,businessman" />
+                                            <img src={item.sex === "male" ? "/boy.svg" : "/girl.svg"} />
                                         </div>
                                     </div>
                                     <div className="text-xl text-center font-semibold text-gray-800 capitalize">{item.nom}</div>
