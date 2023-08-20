@@ -9,7 +9,7 @@ function Portfolio() {
             <div className='grid grid-cols-1 md:grid-cols-8 sm:space-y-1 space-y-5'>
                 <div className="col-span-2">
                     <div className="card bg-base-100 shadow-xl !sticky !top-[20%]">
-                        <figure><img src="https://source.unsplash.com/300x300/?man,businessman" className="rounded-xl w-4/5" alt="Shoes" /></figure>
+                        <figure><img src="https://source.unsplash.com/300x300/?man,businessman" className="rounded-xl w-9/12" alt="Photo" /></figure>
                         <div className="card-body text-center">
                             <h2 className="card-title font-extrabold flex justify-center">Name</h2>
                             <p>Mail</p>
