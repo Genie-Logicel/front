@@ -38,7 +38,7 @@ function Portfolio() {
                             <p>{info.email}</p>
                             <p>{info.adresse}</p>
                             <div className="card-actions justify-center">
-                                <div className="flex my-2">
+                                <div className="flex gap-3 my-2">
                                     {links.map((link) => (
                                         <a className="badge badge-info py-2" key={link.id} target="_blank" href={link.relation}>
                                             {link.nom}
