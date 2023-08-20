@@ -2,37 +2,44 @@ import Skill from "./Skill";
 import Experience from "./Experience";
 import Project from "./Project";
 import Contact from "./Contact";
+import Descri from "./Descri";
 function Portfolio() {
     return (
         <div className='w-full py-10 px-5 space-y-5'>
-            <div className='grid sm:grid-cols-5 grid-cols-1 sm:grayscale sm:hover:grayscale-0 sm:space-y-1 space-y-5'>
-                <div className='sm:col-span-3 col-span-1 flex justify-center items-center'>
-                    <div className='flex flex-col justify-center'>
-
-                        <div>
-                            <h1 className="text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl text-center">Portfolio</h1>
-                        </div>
-                        <div>
-                            <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+            <div className='grid grid-cols-1 md:grid-cols-8 sm:space-y-1 space-y-5'>
+                <div className="col-span-2">
+                    <div className="card bg-base-100 shadow-xl !sticky !top-[20%]">
+                        <figure><img src="https://source.unsplash.com/300x300/?man,businessman" className="rounded-xl w-4/5" alt="Shoes" /></figure>
+                        <div className="card-body text-center">
+                            <h2 className="card-title font-extrabold flex justify-center">Name</h2>
+                            <p>Mail</p>
+                            <div className="card-actions justify-center">
+                            <div className="flex my-2"> 
+                                <a href="#" className="w-12 h-12 rounded-full border-cyan-500 border text-stone-500 hover:bg-cyan-500 hover:text-white mx-1 pt-1 inline-block" ><i className="fa fa-twitter"></i ></a> 
+                                <a href="#" className="w-12 h-12 rounded-full border-cyan-500 border text-stone-500 hover:bg-cyan-500 hover:text-white mx-1 pt-1 inline-block" ><i className="fa fa-instagram"></i ></a> 
+                                <a href="#" className="w-12 h-12 rounded-full border-cyan-500 border text-stone-500 hover:bg-cyan-500 hover:text-white mx-1 pt-1 inline-block" ><i className="fa fa-facebook"></i ></a> 
+                                <a href="#" className="w-12 h-12 rounded-full border-cyan-500 border text-stone-500 hover:bg-cyan-500 hover:text-white mx-1 pt-1 inline-block" ><i className="fa fa-linkedin"></i ></a> </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-                <div className='sm:col-span-2 col-span-1 p-5'>
-                    <img className="h-auto transition-all duration-300 rounded-lg cursor-pointer filter" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png" alt="image description" />
+                <div className="col-span-6">
+                    <div className="pl-5">
+                        <Descri />
+                    </div>
+                    <div className="pl-5">
+                        <Skill />
+                    </div>
+                    <div className="pl-5">
+                        <Experience />
+                    </div>
+                    <div className="pl-5">
+                        <Project />
+                    </div>
+                    <div className="pl-5">
+                        <Contact />
+                    </div>
                 </div>
-            </div>
-            <div className="px-5">
-                <Skill />
-            </div>
-            <div className="px-5">
-                <Experience />
-            </div>
-            <div className="px-5">
-                <Project />
-            </div>
-            <div className="px-5">
-                <Contact />
             </div>
         </div>
     );
