@@ -2,6 +2,7 @@ import Landing from '../pages/Landing';
 import Domain from './Domain';
 import Timeline from '../pages/Timeline';
 import Team from '../pages/Team';
+import Contact from '../pages/Portfolio/Contact';
 import Footer from './Footer';
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
             <Domain />
             <Team />
             <Timeline />
+            <Contact />
           </div>
         </div>
       </div>
