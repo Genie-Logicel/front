@@ -16,6 +16,7 @@ function Portfolio() {
 
     useEffect(() => {
         fetchData();
+        rand()
     }, []);
 
     const fetchData = async () => {
@@ -28,6 +29,19 @@ function Portfolio() {
             console.error('Error fetching data:', error);
         }
     };
+
+    // * rand
+    const rand = async () => {
+        try {
+            const response = await axios.get('/who.json');
+            console.log(response.data);
+        } catch (error) {
+            console.log("error",error);
+        }
+    }
+
+  
+
     return (
         <div className='py-10 px-5 space-y-5'>
             <div className='grid grid-cols-1 md:grid-cols-8 sm:space-y-1 space-y-5'>
@@ -57,7 +71,7 @@ function Portfolio() {
 
                             <div className="w-1/2">
                                 <blockquote className="text-xl italic text-gray-500">
-                                    <p>"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+                                    {/* <p>" {randomText} "</p> */}
                                 </blockquote>
                             </div>
 

@@ -2,7 +2,7 @@ import Landing from '../pages/Landing';
 import Domain from './Domain';
 import Timeline from '../pages/Timeline';
 import Team from '../pages/Team';
-import Contact from '../pages/Portfolio/Contact';
+import Contact from './Contact';
 import Footer from './Footer';
 function Home() {
   return (
