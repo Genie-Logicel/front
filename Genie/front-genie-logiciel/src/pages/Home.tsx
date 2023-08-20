@@ -2,7 +2,6 @@ import Landing from '../pages/Landing';
 import Domain from './Domain';
 import Timeline from '../pages/Timeline';
 import Team from '../pages/Team';
-import Contact from './Contact';
 import Footer from './Footer';
 function Home() {
   return (
@@ -10,11 +9,10 @@ function Home() {
       <div className='pb-5'>
         <div className='w-full'>
           <Landing />
-          <div className='space-y-5'>
+          <div className='space-y-5 px-[10%]'>
             <Domain />
             <Team />
             <Timeline />
-            <Contact />
           </div>
         </div>
       </div>

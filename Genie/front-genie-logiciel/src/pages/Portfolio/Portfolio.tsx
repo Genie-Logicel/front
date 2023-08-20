@@ -27,7 +27,7 @@ function Portfolio() {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://192.168.88.29:8000/api/members/' + id);
+            const response = await axios.get('http://127.0.0.1:8000/api/members/' + id);
             setInfo(response.data.data.member);
             setLinks(response.data.data.links);
             setSkills(response.data.data.skills);
