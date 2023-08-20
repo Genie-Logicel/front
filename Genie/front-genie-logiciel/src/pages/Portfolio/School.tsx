@@ -19,7 +19,7 @@ function School() {
                         </li>
                     </ol>
                 </div>
-                <div className="p-5 border border-gray-100 rounded-lg">
+                <div className="p-5 mb-4 border border-gray-100 rounded-lg">
                     <time className="text-lg font-semibold text-gray-900">June 12th, 2021 - July 15th, 2022</time>
                     <ol className="mt-3 divide-y divider-gray-200">
                         <li>
@@ -33,7 +33,7 @@ function School() {
                         </li>
                     </ol>
                 </div>
-                <div className="p-5 border border-gray-100 rounded-lg">
+                <div className="p-5 mb-4 border border-gray-100 rounded-lg">
                     <time className="text-lg font-semibold text-gray-900">April 04th, 2018  - April, 2021</time>
                     <ol className="mt-3 divide-y divider-gray-200">
                         <li>
