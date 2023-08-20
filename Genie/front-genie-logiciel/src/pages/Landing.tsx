@@ -3,7 +3,7 @@ import Wordz from "../components/Wordz";
 function Landing() {
     return (
         <div className="w-full">
-            <div className="h-[90vh] relative bg-[url(https://www.emit.mg/uploads/3d_print_school_2f8151be7b.jpg)] bg-no-repeat bg-cover">
+            <div className="h-[100vh] relative bg-[url(https://www.emit.mg/uploads/3d_print_school_2f8151be7b.jpg)] bg-no-repeat bg-cover">
                 <div className="absolute w-full h-full bg-gray-500 top-0 left-0 opacity-50"></div>
                 <Wordz />
                 <div className="absolute bottom-0 w-full flex justify-center h-[25%]">
