@@ -18,6 +18,7 @@ function Portfolio() {
     const [studies, setStudies] = useState([]);
     const [formations, setFormations] = useState([]);
     const [others, setOthers] = useState([]);
+    const [randomText, setRandomText] = useState('');
 
     useEffect(() => {
         fetchData();
@@ -34,7 +35,7 @@ function Portfolio() {
             setStudies(response.data.data.study);
             setFormations(response.data.data.formation);
             setOthers(response.data.data.others);
-            console.log(response.data.data);
+            // console.log(response.data.data);
         } catch (error) {
             console.error('Error fetching data:', error);
         }
@@ -44,13 +45,15 @@ function Portfolio() {
     const rand = async () => {
         try {
             const response = await axios.get('/who.json');
-            console.log(response.data);
+            const data = response.data;
+            const rand = Math.floor(Math.random() * data.length);
+            setRandomText(data[rand]);
         } catch (error) {
-            console.log("error",error);
+            console.log("error", error);
         }
     }
 
-  
+
 
     return (
         <div className='py-10 px-5 space-y-5'>
@@ -82,8 +85,8 @@ function Portfolio() {
                             <h1 className="text-3xl font-extrabold">Qui suis-je?</h1>
 
                             <div className="w-1/2">
-                                <blockquote className="text-xl italic text-gray-500">
-                                    {/* <p>" {randomText} "</p> */}
+                                <blockquote className="text-xl italic text-gray-500 text-center">
+                                    <p>" {randomText} "</p>
                                 </blockquote>
                             </div>
 
@@ -161,8 +164,7 @@ function Portfolio() {
                             <div className="flex justify-center flex-col px-10">
                                 <div className="flex flex-col justify-center items-center my-6">
                                     <div className="text-3xl  font-extrabold">Etudes</div>
-                                    import { getRandomTexts} from '../../utils';
-    </div>
+                                </div>
                                 <div className="flex flex-col justify-center">
                                     {studies.map((study) => (
                                         <div className="p-5 mb-4 border border-gray-100 rounded-lg">
