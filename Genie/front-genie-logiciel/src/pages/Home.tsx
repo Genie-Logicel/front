@@ -1,5 +1,4 @@
 import Landing from '../pages/Landing';
-import Count from '../pages/Count';
 import Domain from './Domain';
 import Timeline from '../pages/Timeline';
 import Team from '../pages/Team';
@@ -12,7 +11,6 @@ function Home() {
         <div className='w-full'>
           <Landing />
           <div className='space-y-5'>
-            <Count />
             <Domain />
             <Team />
             <Timeline />
