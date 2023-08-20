@@ -1,62 +1,49 @@
+import Hiadina from '../assets/hiadina.png'
+import WebMapping from '../assets/webmapp.png'
+import RH from '../assets/RH-Log.png'
+import AirPay from '../assets/7.png'
+
 function Timeline() {
     return (
         <div>
-            <div className="container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
-                <div className="text-4xl font-bold text-center pb-5">
+            <div className="container mx-auto space-y-10">
+                <div className="text-5xl first-letter:text-7xl font-bold text-center pb-5">
                     Les projets réalisés
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                    <a href="#" className="sm:col-span-2 md:col-span-1 block group relative transition ease-out active:opacity-75 overflow-hidden">
-                        <img src="https://cdn.tailkit.com/media/placeholders/photo-PDX_a_82obo-700x700.jpg" alt="Product Image" className="transform transition ease-out group-hover:scale-110" />
+                <div className="flex justify-center flex-wrap gap-4">
+                    <a href="#" className="w-1/3 sm:col-span-2 md:col-span-1 block group relative transition ease-out active:opacity-75 overflow-hidden">
+                        <img src={Hiadina} alt="Product Image" className="transform transition ease-out group-hover:scale-110" />
                         <div className="absolute inset-0 bg-black bg-opacity-25 transition ease-out group-hover:bg-opacity-0" />
                         <div className="p-4 flex items-center justify-center absolute inset-0">
                             <div className="py-3 px-4 bg-white bg-opacity-95 rounded-3xl text-sm font-semibold uppercase tracking-wide transition ease-out group-hover:text-white group-hover:bg-blue-400/90">
-                                Electronics
+                                Plateforme examen
                             </div>
                         </div>
                     </a>
-                    <a href="#" className="block group relative transition ease-out active:opacity-75 overflow-hidden">
-                        <img src="https://cdn.tailkit.com/media/placeholders/photo-1SAnrIxw5OY-700x700.jpg" alt="Product Image" className="transform transition ease-out group-hover:scale-110" />
+                    <a href="#" className="w-1/3 block group relative transition ease-out active:opacity-75 overflow-hidden">
+                        <img src={WebMapping} alt="Product Image" className="transform transition ease-out group-hover:scale-110" />
                         <div className="absolute inset-0 bg-black bg-opacity-25 transition ease-out group-hover:bg-opacity-0" />
                         <div className="p-4 flex items-center justify-center absolute inset-0">
                             <div className="py-3 px-4 bg-white bg-opacity-95 rounded-3xl text-sm font-semibold uppercase tracking-wide transition ease-out group-hover:text-white group-hover:bg-blue-400/90">
-                                Computers
+                                WebMapping
                             </div>
                         </div>
                     </a>
-                    <a href="#" className="block group relative transition ease-out active:opacity-75 overflow-hidden">
-                        <img src="https://cdn.tailkit.com/media/placeholders/photo-gUPiTDBdRe4-700x700.jpg" alt="Product Image" className="transform transition ease-out group-hover:scale-110" />
+                    <a href="#" className="w-1/3 block group relative transition ease-out active:opacity-75 overflow-hidden">
+                        <img src={AirPay} alt="Product Image" className="transform transition ease-out group-hover:scale-110" />
                         <div className="absolute inset-0 bg-black bg-opacity-25 transition ease-out group-hover:bg-opacity-0" />
                         <div className="p-4 flex items-center justify-center absolute inset-0">
                             <div className="py-3 px-4 bg-white bg-opacity-95 rounded-3xl text-sm font-semibold uppercase tracking-wide transition ease-out group-hover:text-white group-hover:bg-blue-400/90">
-                                Clothes
+                                Hackathon
                             </div>
                         </div>
                     </a>
-                    <a href="#" className="sm:col-span-2 md:col-span-1 block group relative transition ease-out active:opacity-75 overflow-hidden">
-                        <img src="https://cdn.tailkit.com/media/placeholders/photo-ALpEkP29Eys-700x700.jpg" alt="Product Image" className="transform transition ease-out group-hover:scale-110" />
+                    <a href="#" className="w-1/3 block group relative transition ease-out active:opacity-75 overflow-hidden">
+                        <img src={RH} alt="Product Image" className="transform transition ease-out group-hover:scale-110" />
                         <div className="absolute inset-0 bg-black bg-opacity-25 transition ease-out group-hover:bg-opacity-0" />
                         <div className="p-4 flex items-center justify-center absolute inset-0">
                             <div className="py-3 px-4 bg-white bg-opacity-95 rounded-3xl text-sm font-semibold uppercase tracking-wide transition ease-out group-hover:text-white group-hover:bg-blue-400/90">
-                                Smart Home
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" className="block group relative transition ease-out active:opacity-75 overflow-hidden">
-                        <img src="https://cdn.tailkit.com/media/placeholders/photo-164_6wVEHfI-700x700.jpg" alt="Product Image" className="transform transition ease-out group-hover:scale-110" />
-                        <div className="absolute inset-0 bg-black bg-opacity-25 transition ease-out group-hover:bg-opacity-0" />
-                        <div className="p-4 flex items-center justify-center absolute inset-0">
-                            <div className="py-3 px-4 bg-white bg-opacity-95 rounded-3xl text-sm font-semibold uppercase tracking-wide transition ease-out group-hover:text-white group-hover:bg-blue-400/90">
-                                Shoes
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" className="block group relative transition ease-out active:opacity-75 overflow-hidden">
-                        <img src="https://cdn.tailkit.com/media/placeholders/photo-wW7XbWYoqK8-700x700.jpg" alt="Product Image" className="transform transition ease-out group-hover:scale-110" />
-                        <div className="absolute inset-0 bg-black bg-opacity-25 transition ease-out group-hover:bg-opacity-0" />
-                        <div className="p-4 flex items-center justify-center absolute inset-0">
-                            <div className="py-3 px-4 bg-white bg-opacity-95 rounded-3xl text-sm font-semibold uppercase tracking-wide transition ease-out group-hover:text-white group-hover:bg-blue-400/90">
-                                Wearables
+                                Hotel
                             </div>
                         </div>
                     </a>
