@@ -3,7 +3,7 @@ function Domain() {
         <div>
             <div className="bg-gradient-to-tr from-indigo-100 via-purple-50 to-teal-100">
                 <div className="container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
-                    <div className="text-4xl font-bold text-center pb-5">
+                    <div className="text-5xl first-letter:text-7xl font-bold text-center pb-5">
                         Nos domaines de compétences
                     </div>
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
