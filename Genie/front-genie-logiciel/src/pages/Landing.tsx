@@ -8,7 +8,7 @@ function Landing() {
                 <Wordz />
                 <div className="absolute bottom-0 w-full flex justify-center h-[25%]">
                     <div className="w-1/2 text-center">
-                        <h1 className="mb-4 text-xl font-extrabold leading-none tracking-tight md:text-3xl lg:text-4xl text-white"><small className="font-semibold">La plateforme qui regroupe les élites <mark className="px-2 text-white bg-blue-400 rounded">#1</mark> au sein de l' <span className="text-blue-400">É</span>cole de <span className="text-blue-400">M</span>anagement et d'<span className="text-blue-400">I</span>nnovation <span className="text-blue-400">T</span>echnologique de l'Université de Fianarantsoa</small></h1>
+                        <h1 className="mb-4 text-5xl font-extrabold leading-none tracking-tight text-white"><small className="font-semibold">La plateforme qui regroupe les élites <mark className="px-2 text-white bg-blue-400 rounded">#1</mark> au sein de l' <span className="text-blue-400">É</span>cole de <span className="text-blue-400">M</span>anagement et d'<span className="text-blue-400">I</span>nnovation <span className="text-blue-400">T</span>echnologique de l'Université de Fianarantsoa</small></h1>
                     </div>
                 </div>
             </div>
