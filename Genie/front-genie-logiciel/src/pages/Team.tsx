@@ -39,7 +39,7 @@ function Team() {
                                                 <div className=" italic text-gray-500">{item.role_nom}</div>
                                                 <div className="flex justify-center">
                                                     <div className="btn btn-info btn-sm rounded-2xl" >
-                                                        <Link to="/Portfolio">Voir le profil</Link>
+                                                        <Link to={"/Portfolio/" + item.id}>Voir le profil</Link>
                                                     </div>
                                                 </div>
                                             </div>
