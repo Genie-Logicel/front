@@ -18,7 +18,7 @@ function Domain() {
                                 <h4 className="text-lg font-bold mb-2">
                                     1. Software Engineering
                                 </h4>
-                                <p className="leading-relaxed text-gray-600">
+                                <p className="leading-relaxed">
                                     We carefully handcrafted a vast collection of UI components to build all kinds of web applications and websites. We keep designing and adding new ones with each update.
                                 </p>
                             </div>
@@ -27,7 +27,7 @@ function Domain() {
                                 <h4 className="text-lg font-bold mb-2">
                                     2. Artifical Intelligency
                                 </h4>
-                                <p className="leading-relaxed text-gray-600">
+                                <p className="leading-relaxed">
                                     You’ll love working with the Tailkit web app! It’s a compiled Vue.js based app which you can host on your own and use to explore and use all available UI components.
                                 </p>
                             </div>
@@ -36,7 +36,7 @@ function Domain() {
                                 <h4 className="text-lg font-bold mb-2">
                                     3. Management & RH
                                 </h4>
-                                <p className="leading-relaxed text-gray-600">
+                                <p className="leading-relaxed">
                                     Search and copy SVG icons, build your button markup or copy your favorite color classes with powerful tools. More are under development to give you superpowers.
                                 </p>
                             </div>
@@ -45,7 +45,7 @@ function Domain() {
                                 <h4 className="text-lg font-bold mb-2">
                                     3. Administration
                                 </h4>
-                                <p className="leading-relaxed text-gray-600">
+                                <p className="leading-relaxed">
                                     Search and copy SVG icons, build your button markup or copy your favorite color classes with powerful tools. More are under development to give you superpowers.
                                 </p>
                             </div>
