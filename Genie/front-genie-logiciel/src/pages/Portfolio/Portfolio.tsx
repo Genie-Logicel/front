@@ -8,6 +8,8 @@ import Schl from '../../assets/School.png'
 import RH from '../../assets/RH-Log.png'
 import AirPay from '../../assets/7.png'
 import Footer from "../Footer";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 interface Info {
     nom: string,
@@ -63,6 +65,7 @@ function Portfolio() {
     const [randomText, setRandomText] = useState('');
 
     useEffect(() => {
+        AOS.init();
         fetchData();
         rand()
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -185,7 +188,7 @@ function Portfolio() {
                                 </div>
                                 <div className="flex flex-wrap justify-center gap-5">
                                     {skills.map((skill) => (
-                                        <div className="card hover:shadow-xl shadow-lg bg-base-100 cursor-pointer duration-100 p-4" key={skill.id}>
+                                        <div data-aos="zoom-in" className="card hover:shadow-xl shadow-lg bg-base-100 cursor-pointer duration-100 p-4" key={skill.id}>
                                             <div className="flex items-center gap-5">
                                                 <div className="text-2xl font-extrabold text-primary">{skill.nom}</div>
                                                 <div className="text-xl font-bold flex justify-center items-center text-base-100 bg-primary rounded-full w-14 h-14">{skill.description}</div>
@@ -214,7 +217,7 @@ function Portfolio() {
                                 </div>
                                 <div className="flex flex-wrap justify-center gap-5">
                                     {others.map((other) => (
-                                        <div className="card hover:shadow-xl bg-base-100 shadow-lg cursor-pointer duration-100 p-4" key={other.id}>
+                                        <div data-aos="flip-down" className="card hover:shadow-xl bg-base-100 shadow-lg cursor-pointer duration-100 p-4" key={other.id}>
                                             <div className="flex items-center gap-5">
                                                 <div className="text-2xl font-extrabold text-secondary">{other.nom}</div>
                                                 <div className="text-xl font-bold flex justify-center items-center text-base-100 bg-secondary rounded-full w-14 h-14">{other.description}</div>
@@ -278,7 +281,7 @@ function Portfolio() {
                             <div className="flex justify-center px-[25%]">
                                 <ol className="relative border-l border-gray-200">
                                     {experiences.map((experience) => (
-                                        <li key={experience.id} className="mb-10 ml-12">
+                                        <li data-aos="fade-right" key={experience.id} className="mb-10 ml-12">
                                             <span className="absolute flex items-center justify-center w-10 h-10 bg-primary/30 rounded-full -left-5">
                                                 <svg className="w-4 h-4 text-blue-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                                     <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
@@ -341,7 +344,7 @@ function Portfolio() {
                                     </div>
                                     <div className="flex flex-col justify-center">
                                         {studies.map((study) => (
-                                            <div className="py-8 px-4">
+                                            <div data-aos="zoom-in-down" className="py-8 px-4">
                                                 <div className="h-full flex items-start">
                                                     <div className="flex-shrink-0 flex flex-col text-center leading-none pt-1.5">
                                                         <span className="font-bold text-xl text-current title-font leading-none">{study.niveau}</span>
@@ -430,7 +433,7 @@ function Portfolio() {
                                     </div>
                                     <div className="flex flex-col justify-center">
                                         {formations.map((formation) => (
-                                            <div className="py-8 px-4">
+                                            <div data-aos="zoom-in-left" className="py-8 px-4">
                                                 <div className="h-full flex items-start">
                                                     <div className="w-12 flex-shrink-0 flex flex-col text-center leading-none pt-1.5">
                                                         <span className="font-bold text-xl text-current title-font leading-none">{formation.annee}</span>

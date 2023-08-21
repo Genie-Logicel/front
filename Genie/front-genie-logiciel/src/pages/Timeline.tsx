@@ -10,7 +10,7 @@ function Timeline() {
                 <div className="text-5xl first-letter:text-7xl font-bold text-center pb-5">
                     Les projets réalisés
                 </div>
-                <div className="flex justify-center flex-wrap gap-4">
+                <div data-aos="flip-left" className="flex justify-center flex-wrap gap-4">
                     <a href="#" className="w-1/3 sm:col-span-2 md:col-span-1 block group relative transition ease-out active:opacity-75 overflow-hidden">
                         <img src={Hiadina} alt="Product Image" className="transform transition ease-out group-hover:scale-110" />
                         <div className="absolute inset-0 bg-black bg-opacity-25 transition ease-out group-hover:bg-opacity-0" />
